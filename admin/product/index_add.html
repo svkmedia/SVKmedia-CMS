@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="../">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pridať produkt - Katalóg | SVKmedia CMS</title>
+
+
+	<!--STYLESHEET-->
+	<!--=================================================-->
+
+	<!--Open Sans Font [ OPTIONAL ] -->
+ 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+
+
+	<!--Bootstrap Stylesheet [ REQUIRED ]-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+	<!--Nifty Stylesheet [ REQUIRED ]-->
+	<link href="css/nifty.css" rel="stylesheet">
+
+
+	<!--Font Awesome [ OPTIONAL ]-->
+	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+	<!--Switchery [ OPTIONAL ]-->
+	<link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+
+
+	<!--Bootstrap Select [ OPTIONAL ]-->
+	<link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+
+
+    <!--Bootstrap Tags Input [ OPTIONAL ]-->
+	<link href="plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+
+    <!--Dropzone [ OPTIONAL ]-->
+	<link href="plugins/dropzone/dropzone.css" rel="stylesheet">
+
+
+    <!--Chosen [ OPTIONAL ]-->
+	<link href="plugins/chosen/chosen.min.css" rel="stylesheet">
+
+
+    <!--Summernote [ OPTIONAL ]-->
+	<link href="plugins/summernote/summernote.min.css" rel="stylesheet">
+
+
+    <!--Bootstrap Validator [ OPTIONAL ]-->
+	<link href="plugins/bootstrap-validator/bootstrapValidator.min.css" rel="stylesheet">
+
+
+    <!--Bootstrap Datepicker [ OPTIONAL ]-->
+	<link href="plugins/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet">
+
+
+	<!--Demo [ DEMONSTRATION ]-->
+	<link href="css/demo/nifty-demo.css" rel="stylesheet">
+
+
+
+
+	<!--SCRIPT-->
+	<!--=================================================-->
+
+	<!--Page Load Progress Bar [ OPTIONAL ]-->
+	<link href="plugins/pace/pace.min.css" rel="stylesheet">
+	<script src="plugins/pace/pace.min.js"></script>
+
+
+	
+	<!--
+
+	REQUIRED
+	You must include this in your project.
+
+	RECOMMENDED
+	This category must be included but you may modify which plugins or components which should be included in your project.
+
+	OPTIONAL
+	Optional plugins. You may choose whether to include it in your project or not.
+
+	DEMONSTRATION
+	This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+	SAMPLE
+	Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+	Detailed information and more samples can be found in the document.
+
+	-->
+		
+
+</head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+
+<body>
+	<div id="container" class="effect mainnav-lg">
+		
+		<!--NAVBAR-->
+		<!--===================================================-->
+		<header id="navbar">
+			<div id="navbar-container" class="boxed">
+
+				<!--Brand logo & name-->
+				<!--================================-->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="img/logo-svkmedia.png" alt="SVKmedia logo" class="brand-icon">
+					</a>
+				</div>
+				<!--================================-->
+				<!--End brand logo & name-->
+
+
+				<!--Navbar Dropdown-->
+				<!--================================-->
+				<div class="navbar-content clearfix">
+					<ul class="nav navbar-top-links pull-left">
+
+						<!--Navigation toogle button-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="tgl-menu-btn">
+							<a class="mainnav-toggle" href="#">
+								<i class="fa fa-navicon fa-lg"></i>
+							</a>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End Navigation toogle button-->
+
+
+						<!--Notification dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+								<i class="fa fa-bell fa-lg"></i>
+								<span class="badge badge-header badge-danger">5</span>
+							</a>
+
+							<!--Notification dropdown menu-->
+							<div class="dropdown-menu dropdown-menu-md with-arrow">
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-no">Aktivity od posledného prihlásenia</p>
+								</div>
+								<div class="nano scrollable">
+									<div class="nano-content">
+										<ul class="head-list">
+
+											<!-- Dropdown list-->
+                                            <!--
+											<li>
+												<a href="#">
+													<div class="clearfix">
+														<p class="pull-left">Database Repair</p>
+														<p class="pull-right">70%</p>
+													</div>
+													<div class="progress progress-sm">
+														<div style="width: 70%;" class="progress-bar">
+															<span class="sr-only">70% Complete</span>
+														</div>
+													</div>
+												</a>
+											</li>
+                                            -->
+
+											<!-- Dropdown list-->
+                                            <!--
+											<li>
+												<a href="#">
+													<div class="clearfix">
+														<p class="pull-left">Upgrade Progress</p>
+														<p class="pull-right">10%</p>
+													</div>
+													<div class="progress progress-sm">
+														<div style="width: 10%;" class="progress-bar progress-bar-warning">
+															<span class="sr-only">10% Complete</span>
+														</div>
+													</div>
+												</a>
+											</li>
+											-->
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap icon-circle bg-primary">
+															<i class="fa fa-comment fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Nový komentár čaká na schválenie</div>
+														<small class="text-muted">Pred 15 minútami</small>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+											<span class="badge badge-success pull-right">90%</span>
+													<div class="media-left">
+														<span class="icon-wrap icon-circle bg-danger">
+															<i class="fa fa-hdd-o fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">HDD je takmer plný</div>
+														<small class="text-muted">Pred 50 minútami</small>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap bg-info">
+															<i class="fa fa-file-word-o fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Nový príspevok na blogu</div>
+														<small class="text-muted">Pred 8 hodinami</small>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+											<span class="label label-danger pull-right">New</span>
+													<div class="media-left">
+														<span class="icon-wrap bg-purple">
+															<i class="fa fa-comment fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Nová odpoveď na komentár</div>
+														<small class="text-muted">Pred 9 hodinami</small>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap bg-success">
+															<i class="fa fa-user fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Registrácia nového užívateľa</div>
+														<small class="text-muted">Pred 2 dňami</small>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!--Dropdown footer-->
+								<div class="pad-all bord-top">
+									<a href="#" class="btn-link text-dark box-block">
+										<i class="fa fa-angle-right fa-lg pull-right"></i>Zobraziť všetky aktivity
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End notifications dropdown-->
+
+
+					</ul>
+					<ul class="nav navbar-top-links pull-right">
+
+						<!--Language selector-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a id="demo-lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown">
+								<span class="lang-selected">
+									<img class="lang-flag" src="img/flags/slovakia.png" alt="Slovak">
+									<span class="lang-id">SK</span>
+									<span class="lang-name">Slovenčina</span>
+								</span>
+							</a>
+
+							<!--Language selector menu-->
+							<ul class="head-list dropdown-menu with-arrow">
+                                <li>
+									<!--Slovak-->
+									<a href="#" class="active">
+										<img class="lang-flag" src="img/flags/slovakia.png" alt="Slovak">
+										<span class="lang-id">SK</span>
+										<span class="lang-name">Slovenčina</span>
+									</a>
+								</li>
+								<li>
+									<!--English-->
+									<a href="#">
+										<img class="lang-flag" src="img/flags/united-kingdom.png" alt="English">
+										<span class="lang-id">EN</span>
+										<span class="lang-name">English</span>
+									</a>
+								</li>
+								<li>
+									<!--Germany-->
+									<a href="#">
+										<img class="lang-flag" src="img/flags/germany.png" alt="Germany">
+										<span class="lang-id">DE</span>
+										<span class="lang-name">Deutsch</span>
+									</a>
+								</li>
+								<li>
+									<!--Italy-->
+									<a href="#">
+										<img class="lang-flag" src="img/flags/italy.png" alt="Italy">
+										<span class="lang-id">IT</span>
+										<span class="lang-name">Italiano</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End language selector-->
+
+
+
+						<!--User dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li id="dropdown-user" class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+								<span class="pull-right">
+									<img class="img-circle img-user media-object" src="img/av1.png" alt="Profile Picture">
+								</span>
+								<div class="username hidden-xs">Tomáš Bartalský</div>
+							</a>
+
+
+							<div class="dropdown-menu dropdown-menu-md dropdown-menu-right with-arrow panel-default">
+
+								<!-- Dropdown heading  -->
+                                <!--
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-btm">750Gb of 1,000Gb Used</p>
+									<div class="progress progress-sm">
+										<div class="progress-bar" style="width: 70%;">
+											<span class="sr-only">70%</span>
+										</div>
+									</div>
+								</div>
+                                -->
+
+								<!-- User dropdown menu -->
+								<ul class="head-list">
+									<li>
+										<a href="#">
+											<i class="fa fa-user fa-fw fa-lg"></i> Môj profil
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="badge badge-danger pull-right">5</span>
+											<i class="fa fa-bell fa-fw fa-lg"></i> Notifikácie
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="label label-success pull-right">New</span>
+											<i class="fa fa-gear fa-fw fa-lg"></i> Nastavenia
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-question-circle fa-fw fa-lg"></i> Pomoc
+										</a>
+									</li>
+								</ul>
+
+								<!-- Dropdown footer -->
+								<div class="pad-all text-right">
+									<a href="login.html" class="btn btn-primary">
+										<i class="fa fa-sign-out fa-fw"></i> Odhlásiť sa
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End user dropdown-->
+
+					</ul>
+				</div>
+				<!--================================-->
+				<!--End Navbar Dropdown-->
+
+			</div>
+		</header>
+		<!--===================================================-->
+		<!--END NAVBAR-->
+
+		<div class="boxed">
+
+			<!--CONTENT CONTAINER-->
+			<!--===================================================-->
+			<div id="content-container">
+				
+				<!--Page Title-->
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<div id="page-title">
+					<h1 class="page-header text-overflow">Katalóg | Pridať produkt</h1>
+
+					<!--Searchbox-->
+					<div class="searchbox">
+						<div class="input-group custom-search-form">
+							<input type="text" class="form-control" placeholder="Vyhľadávanie...">
+							<span class="input-group-btn">
+								<button class="text-muted" type="button"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<!--End page title-->
+
+                <!--Breadcrumb-->
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <ol class="breadcrumb">
+                    <li><a href="./index.html">Administrácia</a></li>
+                    <li><a href="./product/">Katalóg</a></li>
+                    <li><a href="./product/index.html">Produkty</a></li>
+                    <li class="active">Pridať produkt</li>
+                </ol>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--End breadcrumb-->
+
+                <!--Page content-->
+                <!--===================================================-->
+                <div id="page-content">
+                    <form action="#" method="post" class="main-form">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Hlavné nastavenia</h3>
+                                    </div>
+
+                                    <!--Block Styled Form -->
+                                    <!--===================================================-->
+                                    <div class="form-horizontal">
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_status">Publikovať</label>
+                                                <div class="col-sm-9 input-lang">
+                                                    <div class="input-group">
+                                                        <input id="product_status" type="checkbox" class="demo-switch" checked>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_title_sk">* Názov</label>
+                                                <div class="col-sm-9 input-lang">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Názov produktu - Slovenčina" name="product_title_sk" id="product_title_sk">
+                                                        <span class="input-group-addon"><img src="./img/flags/slovakia-small.png" alt="slovak" /></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label"></label>
+                                                <div class="col-sm-9 input-lang">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Názov produktu - English" name="product_title_en" id="product_title_en">
+                                                        <span class="input-group-addon"><img src="./img/flags/united-kingdom-small.png" alt="english" /></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label"></label>
+                                                <div class="col-sm-9 input-lang">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Názov produktu - Deutsch" name="product_title_en" id="product_title_en">
+                                                        <span class="input-group-addon"><img src="./img/flags/germany-small.png" alt="deutsch" /></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_title_url">* Názov v URL</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="Názov sekcie v URL adrese" name="product_title_url" id="product_title_url" class="form-control">
+                                                    <a class="fa fa-question-circle fa-lg fa-fw unselectable add-tooltip input-tooltip" href="#" data-original-title="<p'>Názov v URL sa zobrazí v URL adrese za doménou, napr.: www.svkmedia.sk/nazov-url/ Tento názov nesmie obsahovať diakritiku, medzery ani iné špeciálne znaky.</p>" data-html="true" title=""></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_producer">* Výrobca</label>
+                                                <div class="col-sm-9">
+                                                    <!-- Default Bootstrap Select -->
+                                                    <!--===================================================-->
+                                                    <select name="product_producer" id="product_producer" data-placeholder="Vyberte výrobcu" class="selectpicker" data-live-search="true" data-width="100%">
+                                                        <option value="">----- Vyberte výrobcu -----</option>
+                                                        <option value="1">Apple</option>
+                                                        <option value="2">Acer</option>
+                                                        <option value="3">Dell</option>
+                                                        <option value="4">HP</option>
+                                                        <option value="5">Cannon</option>
+                                                        <option value="6">Lenovo</option>
+                                                        <option value="7">Samsung</option>
+                                                        <option value="8">Google</option>
+                                                    </select>
+                                                    <!--===================================================-->
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_category">Kategórie</label>
+                                                <div class="col-sm-9">
+                                                    <!-- Bootstrap Select with Search Input -->
+                                                    <!--===================================================-->
+                                                    <select name="product_category" id="product_category" multiple data-placeholder="----- Vyberte kategórie -----" data-live-search="true" style="width: 100%">
+                                                        <option value="1">Úvod</option>
+                                                            <option value="1-1" style="padding-left: 25px;">Vnorená kategória</option>
+                                                            <option value="1-2" style="padding-left: 25px;">Vnorená kategória 2</option>
+                                                        <option value="2">Novinky</option>
+                                                        <option value="3">Galéria</option>
+                                                        <option value="4">Kalendár</option>
+                                                        <option value="5">Video</option>
+                                                        <option value="6">Produkty</option>
+                                                        <option value="7">O nás</option>
+                                                        <option value="8">Kontakt</option>
+                                                    </select>
+                                                    <!--===================================================-->
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_image">Obrázok</label>
+                                                <div class="col-sm-9">
+                                                    <span class="pull-left btn btn-default btn-file">
+                                                        Prehľadávať... <input type="file" name="product_image" id="product_image">
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_ean">EAN</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="Zadajte EAN kód" name="product_ean" id="product_ean" class="form-control">
+                                                    <a class="fa fa-question-circle fa-lg fa-fw unselectable add-tooltip input-tooltip" href="#" data-original-title="<p>EAN - European Article Number, je druh čiarových kódov. Najčastejšie používaný čiarový kód vôbec je EAN-13. Kódy EAN-13 sa používajú na celom svete na označovanie jednotlivých druhov tovaru.</p>" data-html="true" title=""></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_attribute">Atribúty</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="" name="product_attribute" id="product_attribute" class="form-control">
+                                                    <a class="fa fa-question-circle fa-lg fa-fw unselectable add-tooltip input-tooltip" href="#" data-original-title="<p>Do pola atribúty môžete vložiť čokolvek. Slúži pre lepšiu identifikáciu produktu alebo priraďovanie špeciálnych funkcií.</p>" data-html="true" title=""></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_dimension_length">Rozmery</label>
+                                                <div class="col-sm-9">
+                                                    <div class="input-group col-sm-3 product-dimension">
+                                                        <input type="text" class="form-control" placeholder="Dĺžka" name="product_dimension_length" id="product_dimension_length">
+                                                        <span class="input-group-addon">cm</span>
+                                                    </div>
+                                                    <div class="input-group col-sm-3 product-dimension">
+                                                        <input type="text" class="form-control" placeholder="Šírka" name="product_dimension_width" id="product_dimension_width">
+                                                        <span class="input-group-addon">cm</span>
+                                                    </div>
+                                                    <div class="input-group col-sm-3 product-dimension">
+                                                        <input type="text" class="form-control" placeholder="Výška" name="product_dimension_height" id="product_dimension_height">
+                                                        <span class="input-group-addon">cm</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_weight">Hmotnosť</label>
+                                                <div class="col-sm-9">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Hmotnosť produktu" name="product_weight" id="product_weight">
+                                                        <span class="input-group-addon">kg</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_daterange_start">Publikovať od</label>
+                                                <div class="col-sm-9">
+                                                    <!--Bootstrap Datepicker : Range-->
+                                                    <!--===================================================-->
+                                                    <div class="input-daterange input-group" id="datepicker">
+                                                        <input type="text" class="form-control" name="product_daterange_start" id="product_daterange_start" />
+                                                        <span class="input-group-addon">do</span>
+                                                        <input type="text" class="form-control" name="product_daterange_end" id="product_daterange_end" />
+                                                    </div>
+                                                    <!--===================================================-->
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!--===================================================-->
+                                    <!--End Block Styled Form -->
+
+                                </div>
+
+                                <div class="panel">
+                                    <!--Panel heading-->
+                                    <div class="panel-heading">
+                                        <div class="panel-control">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#demo-tabs-box-1" data-toggle="tab"><img src="./img/flags/slovakia-small.png" alt="slovak" /></a></li>
+                                                <li><a href="#demo-tabs-box-2" data-toggle="tab"><img src="./img/flags/united-kingdom-small.png" alt="english" /></a></li>
+                                                <li><a href="#demo-tabs-box-2" data-toggle="tab"><img src="./img/flags/germany-small.png" alt="deutsch" /></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="panel-title">Popis</h3>
+                                    </div>
+
+                                    <!--Panel body-->
+                                    <div class="panel-body">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in active" id="demo-tabs-box-1">
+                                                <!--Summernote-->
+                                                <!--===================================================-->
+                                                <div class="summernote" id="product_content_sk"></div>
+                                                <!--===================================================-->
+                                                <!-- End Summernote -->
+                                            </div>
+                                            <div class="tab-pane fade" id="demo-tabs-box-2">
+                                                <!--Summernote-->
+                                                <!--===================================================-->
+                                                <div class="summernote" id="product_content_en"></div>
+                                                <!--===================================================-->
+                                                <!-- End Summernote -->
+                                            </div>
+                                            <div class="tab-pane fade" id="demo-tabs-box-2">
+                                                <!--Summernote-->
+                                                <!--===================================================-->
+                                                <div class="summernote" id="product_content_de"></div>
+                                                <!--===================================================-->
+                                                <!-- End Summernote -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Ceny a sklad</h3>
+                                    </div>
+
+                                    <!--Block Styled Form -->
+                                    <!--===================================================-->
+                                    <div class="form-horizontal">
+                                        <div class="panel-body">
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_price">* Cena</label>
+                                                <div class="col-sm-9">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Cena produktu" name="product_price" id="product_price">
+                                                        <span class="input-group-addon"><i class="fa fa-euro"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_price_tax">* Cena bez DPH</label>
+                                                <div class="col-sm-9">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Cena produktu bez DPH" name="product_price_tax" id="product_price_tax">
+                                                        <span class="input-group-addon"><i class="fa fa-euro"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_tax">* DPH</label>
+                                                <div class="col-sm-9">
+                                                    <!-- Default Bootstrap Select -->
+                                                    <!--===================================================-->
+                                                    <select class="selectpicker" name="product_tax" id="product_tax" data-width="100%">
+                                                        <option value="20">20%</option>
+                                                        <option value="19">19%</option>
+                                                        <option value="10">10%</option>
+                                                        <option value="0">Neuplatňuje sa DPH</option>
+                                                    </select>
+                                                    <!--===================================================-->
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_sale_percent">Zľava</label>
+                                                <div class="col-sm-9">
+                                                    <div class="input-group col-sm-4 product-sale">
+                                                        <input type="text" class="form-control" placeholder="Percentá" name="product_sale_percent" id="product_sale_percent">
+                                                        <span class="input-group-addon">%</span>
+                                                    </div>
+                                                    <div class="input-group col-sm-3 product-sale">
+                                                        <input type="text" class="form-control" placeholder="Suma" name="product_sale_value" id="product_sale_value">
+                                                        <span class="input-group-addon"><i class="fa fa-euro"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_sale_daterange_start">Zľava platná od</label>
+                                                <div class="col-sm-9">
+                                                    <!--Bootstrap Datepicker : Range-->
+                                                    <!--===================================================-->
+                                                    <div class="input-daterange input-group" id="datepicker">
+                                                        <input type="text" class="form-control" name="product_sale_daterange_start" id="product_sale_daterange_start" />
+                                                        <span class="input-group-addon">do</span>
+                                                        <input type="text" class="form-control" name="product_sale_daterange_end" id="product_sale_daterange_end" />
+                                                    </div>
+                                                    <!--===================================================-->
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_stock">Sklad</label>
+                                                <div class="col-sm-9">
+                                                    <input type="number" placeholder="Počet produktov na sklade" name="product_stock" id="product_stock" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_stock_sub">Znižovať sklad</label>
+                                                <div class="col-sm-9">
+                                                    <!-- Default Bootstrap Select -->
+                                                    <!--===================================================-->
+                                                    <select class="selectpicker" name="product_stock_sub" id="product_stock_sub" data-width="100%">
+                                                        <option value="1">Áno</option>
+                                                        <option value="2">Nie</option>
+                                                    </select>
+                                                    <!--===================================================-->
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_stock_out">Ak nie je skladom</label>
+                                                <div class="col-sm-9">
+                                                    <!-- Default Bootstrap Select -->
+                                                    <!--===================================================-->
+                                                    <select class="selectpicker" name="product_stock_out" id="product_stock_out" data-width="100%">
+                                                        <option value="1">Na objednávku (2-3 dni)</option>
+                                                        <option value="2">Na objednávku do 7 dní</option>
+                                                        <option value="3">Na objednávku do 14 dní</option>
+                                                        <option value="4">Vypredané</option>
+                                                        <option value="5">Predobjednávky</option>
+                                                        <option value="6">Na sklade</option>
+                                                    </select>
+                                                    <!--===================================================-->
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_points">Body za nákup</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="" name="product_points" id="product_points" class="form-control">
+                                                    <a class="fa fa-question-circle fa-lg fa-fw unselectable add-tooltip input-tooltip" href="#" data-original-title="<h4>Vernostný program</h4><p> Počet bodov, ktoré získa zákazník za nákup produktu.</p>" data-html="true" title=""></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_points_required">Body pre nákup</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="" name="product_points_required" id="product_points_required" class="form-control">
+                                                    <a class="fa fa-question-circle fa-lg fa-fw unselectable add-tooltip input-tooltip" href="#" data-original-title="<h4>Vernostný program</h4><p> Počet bodov, za ktoré si môže zákazník kúpiť produkt.</p>" data-html="true" title=""></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!--===================================================-->
+                                    <!--End Block Styled Form -->
+
+                                </div>
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">SEO nastavenia</h3>
+                                        <a class="fa fa-question-circle fa-lg fa-fw unselectable add-tooltip" href="#" data-original-title="<h4 class='text-thin'>Čo je to SEO?</h4><p>SEO (z anglického Search Engine Optimization) znamená Optimalizácia pre vyhľadávače. V tejto časti teda nájdete všetky nastavenia pre vyhľadávače (napr. Google).</p>" data-html="true" title=""></a>
+                                    </div>
+
+                                    <!--Horizontal Form-->
+                                    <!--===================================================-->
+                                    <div class="form-horizontal">
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_seo_title_sk">SEO názov</label>
+                                                <div class="col-sm-9">
+                                                    <div class="input-group mar-btm">
+                                                        <input type="text" class="form-control" placeholder="SEO názov sekcie - Slovenčina" name="product_seo_title_sk" id="product_seo_title_sk">
+                                                        <span class="input-group-addon"><img src="./img/flags/slovakia-small.png" alt="slovak" /></span>
+                                                    </div>
+                                                    <div class="input-group mar-btm">
+                                                        <input type="text" class="form-control" placeholder="SEO názov sekcie - English" name="product_seo_title_en" id="product_seo_title_en">
+                                                        <span class="input-group-addon"><img src="./img/flags/united-kingdom-small.png" alt="english" /></span>
+                                                    </div>
+                                                    <div class="input-group mar-btm">
+                                                        <input type="text" class="form-control" placeholder="SEO názov sekcie - Deutsch" name="product_seo_title_de" id="product_seo_title_de">
+                                                        <span class="input-group-addon"><img src="./img/flags/germany-small.png" alt="deutsch" /></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_seo_desc_sk">SEO popis</label>
+                                                <div class="col-sm-9">
+                                                    <div class="input-group mar-btm">
+                                                        <textarea class="form-control" rows="4" name="product_seo_desc_sk" id="product_seo_desc_sk"></textarea>
+                                                        <span class="input-group-addon"><img src="./img/flags/slovakia-small.png" alt="slovak" /></span>
+                                                    </div>
+                                                    <div class="input-group mar-btm">
+                                                        <textarea class="form-control" rows="4" name="product_seo_desc_en" id="product_seo_desc_en"></textarea>
+                                                        <span class="input-group-addon"><img src="./img/flags/united-kingdom-small.png" alt="english" /></span>
+                                                    </div>
+                                                    <div class="input-group mar-btm">
+                                                        <textarea class="form-control" rows="4" name="product_seo_desc_de" id="product_seo_desc_de"></textarea>
+                                                        <span class="input-group-addon"><img src="./img/flags/germany-small.png" alt="deutsch" /></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">SEO obrázok</label>
+                                                <div class="col-sm-9">
+                                                    <span class="pull-left btn btn-default btn-file">
+                                                        Prehľadávať... <input type="file">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="product_keywords" style="margin-top: 3px;">Kľúčove slová</label>
+                                                <div class="col-sm-9">
+                                                    <!-- Bootstrap Tags Input -->
+                                                    <!--===================================================-->
+                                                    <input type="text" name="product_keywords" id="product_keywords" class="form-control" placeholder="Pridať slovo" value="počítač, elektronika" data-role="tagsinput">
+                                                    <!--===================================================-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel-footer text-right">
+                                        <button class="btn btn-success" type="submit">Uložiť</button>
+                                        <button class="btn btn-default" type="submit">Storno</button>
+                                    </div>
+                                    <!--===================================================-->
+                                    <!--End Horizontal Form-->
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Galéria</h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <!--Dropzonejs-->
+                            <!--===================================================-->
+                            <form id="demo-dropzone" action="#" class="dropzone">
+                                <div class="dz-default dz-message">
+                                    <div class="dz-icon icon-wrap icon-circle icon-wrap-md">
+                                        <i class="fa fa-cloud-upload fa-3x"></i>
+                                    </div>
+                                    <div>
+                                        <p class="dz-text">Potiahnite súbory sem</p>
+                                        <p class="text-muted">alebo kliknite a vyberte súbory manuálne</p>
+                                    </div>
+                                </div>
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple />
+                                </div>
+                            </form>
+                            <!--===================================================-->
+                            <!-- End Dropzonejs -->
+
+                        </div>
+                    </div>
+
+                </div>
+				<!--===================================================-->
+				<!--End page content-->
+
+
+			</div>
+			<!--===================================================-->
+			<!--END CONTENT CONTAINER-->
+
+
+			
+			<!--MAIN NAVIGATION-->
+			<!--===================================================-->
+			<nav id="mainnav-container">
+				<div id="mainnav">
+
+					<!--Menu-->
+					<!--================================-->
+					<div id="mainnav-menu-wrap">
+						<div class="nano">
+							<div class="nano-content">
+								<ul id="mainnav-menu" class="list-group">
+
+									<!--Category name-->
+									<li class="list-header">Navigácia</li>
+
+									<!--Menu list item-->
+									<li>
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">
+												<strong>Administrácia</strong>
+												<span class="label label-success pull-right">Top</span>
+											</span>
+										</a>
+									</li>
+
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-file"></i>
+											<span class="menu-title">
+												<strong>Obsah</strong>
+											</span>
+											<i class="arrow"></i>
+										</a>
+
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./content/index.html">Sekcie</a></li>
+											<li><a href="./content/navigation.html">Navigácia</a></li>
+											<li><a href="./content/categories.html">Kategórie</a></li>
+											<li><a href="./content/filemanager.html">Súbory</a></li>
+										</ul>
+									</li>
+
+									<!--Menu list item-->
+									<li class="active-sub active">
+										<a href="#">
+											<i class="fa fa-suitcase"></i>
+											<span class="menu-title">
+												<strong>Katalóg</strong>
+											</span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse in">
+											<li class="active-submenu"><a href="./product/index.html">Produkty</a></li>
+											<li><a href="./product/brands.html">Výrobcovia</a></li>
+											<li><a href="./product/categories.html">Kategórie</a></li>
+											<li><a href="./product/sale.html">Zľavy</a></li>
+											<li><a href="./product/import.html">Import</a></li>
+											<li><a href="./product/export.html">Export</a></li>
+										</ul>
+									</li>
+
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-shopping-cart"></i>
+											<span class="menu-title">
+												<strong>Objednávky</strong>
+												<span class="pull-right badge badge-warning badge-arrow">9</span>
+											</span>
+                                            <i class="arrow"></i>
+										</a>
+
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./order/index.html">Prehľad</a></li>
+											<li><a href="./order/delivery.html">Doprava</a></li>
+											<li><a href="./order/payment.html">Platba</a></li>
+											<li><a href="./order/cart.html">Nákupný košík</a></li>
+										</ul>
+									</li>
+
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-cloud"></i>
+											<span class="menu-title">
+                                                <strong>Blog</strong>
+                                            </span>
+											<i class="arrow"></i>
+										</a>
+
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./blog/index.html">Príspevky</a></li>
+											<li><a href="./blog/categories.html">Kategórie</a></li>
+										</ul>
+									</li>
+
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-image"></i>
+											<span class="menu-title">
+                                                <strong>Galéria</strong>
+                                            </span>
+											<i class="arrow"></i>
+										</a>
+
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./gallery/index.html">Galérie</a></li>
+											<li><a href="./gallery/categories.html">Kategórie</a></li>
+										</ul>
+									</li>
+
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-video-camera"></i>
+											<span class="menu-title">
+                                                <strong>Video</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./video/index.html">Videá</a></li>
+											<li><a href="./video/categories.html">Kategórie</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-calendar"></i>
+											<span class="menu-title">
+                                                <strong>Kalendár</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./calendar/index.html">Udalosti</a></li>
+											<li><a href="./calendar/categories.html">Kategórie</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="./comment/index.html">
+											<i class="fa fa-comments"></i>
+											<span class="menu-title">
+												<strong>Komentáre</strong>
+												<span class="pull-right badge badge-warning badge-arrow">3</span>
+											</span>
+										</a>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-bolt"></i>
+											<span class="menu-title">
+                                                <strong>Reklama</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./advertisement/index.html">Kampane</a></li>
+											<li><a href="./advertisement/positions.html">Pozície</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="./user/index.html">
+											<i class="fa fa-user"></i>
+											<span class="menu-title">
+                                                <strong>Užívatelia</strong>
+                                            </span>
+										</a>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-envelope"></i>
+											<span class="menu-title">
+                                                <strong>Newsletter</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./newsletter/index.html">Kampane</a></li>
+											<li><a href="./newsletter/email_list.html">Zoznam emailov</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-wrench"></i>
+											<span class="menu-title">
+                                                <strong>Nastavenia</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./settings/index.html">Hlavné</a></li>
+											<li><a href="./settings/database.html">Databáza</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-line-chart"></i>
+											<span class="menu-title">
+                                                <strong>Štatistiky</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./stats/index.html">Návštevnosť</a></li>
+											<li><a href="./stats/shop.html">Obchod</a></li>
+                                            <li><a href="./stats/user.html">Užívatelia</a></li>
+											<li><a href="./stats/newsletter.html">Newsletter</a></li>
+											<li><a href="./stats/search.html">Vyhľadávanie</a></li>
+										</ul>
+									</li>
+
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<!--================================-->
+					<!--End menu-->
+
+				</div>
+			</nav>
+			<!--===================================================-->
+			<!--END MAIN NAVIGATION-->
+            
+
+		</div>
+
+		
+
+		<!-- FOOTER -->
+		<!--===================================================-->
+		<footer id="footer">
+
+			<!-- Visible when footer positions are fixed -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="show-fixed pull-right">
+				<ul class="footer-list list-inline">
+					<li>
+						<p class="text-sm">SEO Proggres</p>
+						<div class="progress progress-sm progress-light-base">
+							<div style="width: 80%" class="progress-bar progress-bar-danger"></div>
+						</div>
+					</li>
+
+					<li>
+						<p class="text-sm">Online Tutorial</p>
+						<div class="progress progress-sm progress-light-base">
+							<div style="width: 80%" class="progress-bar progress-bar-primary"></div>
+						</div>
+					</li>
+					<li>
+						<button class="btn btn-sm btn-dark btn-active-success">Checkout</button>
+					</li>
+				</ul>
+			</div>
+
+
+
+			<!-- Visible when footer positions are static -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="hide-fixed pull-right pad-rgt">Currently v2.2</div>
+
+
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Remove the class name "show-fixed" and "hide-fixed" to make the content always appears. -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<p class="pad-lft">&#0169; 2015 Your Company</p>
+
+
+
+		</footer>
+		<!--===================================================-->
+		<!-- END FOOTER -->
+
+
+		<!-- SCROLL TOP BUTTON -->
+		<!--===================================================-->
+		<button id="scroll-top" class="btn"><i class="fa fa-chevron-up"></i></button>
+		<!--===================================================-->
+
+
+
+	</div>
+	<!--===================================================-->
+	<!-- END OF CONTAINER -->
+
+
+
+	
+	<!--JAVASCRIPT-->
+	<!--=================================================-->
+
+	<!--jQuery [ REQUIRED ]-->
+	<script src="js/jquery-2.1.1.min.js"></script>
+
+
+	<!--BootstrapJS [ RECOMMENDED ]-->
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!--Fast Click [ OPTIONAL ]-->
+	<script src="plugins/fast-click/fastclick.min.js"></script>
+
+	
+	<!--Nifty Admin [ RECOMMENDED ]-->
+	<script src="js/nifty.js"></script>
+
+
+	<!--Switchery [ OPTIONAL ]-->
+	<script src="plugins/switchery/switchery.min.js"></script>
+
+
+	<!--Bootstrap Select [ OPTIONAL ]-->
+	<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+
+
+    <!--Bootstrap Tags Input [ OPTIONAL ]-->
+	<script src="plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+
+    <!--Bootstrap Validator [ OPTIONAL ]-->
+	<script src="plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+
+
+    <!--Bootstrap Datepicker [ OPTIONAL ]-->
+	<script src="plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+
+
+    <!--Dropzone [ OPTIONAL ]-->
+	<script src="plugins/dropzone/dropzone.min.js"></script>
+
+
+    <!--Chosen [ OPTIONAL ]-->
+	<script src="plugins/chosen/chosen.jquery.min.js"></script>
+
+
+    <!--Summernote [ OPTIONAL ]-->
+	<script src="plugins/summernote/summernote.js"></script>
+
+
+    <!--Form-->
+    <script type="text/javascript">
+        $(function() {
+
+            // Wysiwig editor
+            $('.summernote').summernote({
+                height: 350,
+                lang: 'sk-SK'
+            });
+
+            // TITLE SK - copy to TITLE URL
+            $('#product_title_sk').keyup(function() {
+                var title = removeDiacritics($(this).val());
+
+                $('#product_title_url').val(title);
+            });
+
+            // PRODUCT PRICE
+            $('#product_price').keyup(function(e) {
+                updateProductPriceTax();
+            });
+
+            $('#product_price_tax').keyup(function(e) {
+                updateProductPrice();
+            });
+
+            $('#product_tax').change(function(e) {
+                updateProductPriceTax();
+                updateProductPrice();
+            });
+
+            // Switchery - checkboxes
+            var elems = Array.prototype.slice.call($('.demo-switch').filter(function(){
+                return $(this).attr('data-switchery') != true && $(this).is(':visible')
+            }));
+            elems.forEach(function(html) { new Switchery(html) });
+
+            $('#product_category').chosen();
+
+            // DATEPICKER - daterange
+            $('.input-daterange').datepicker({
+                format: "d.MM, yyyy",
+                todayBtn: "linked",
+                autoclose: true,
+                todayHighlight: true,
+                language: 'sk'
+            });
+
+            // DROPZONE.JS
+            // =================================================================
+            // Require Dropzone
+            // http://www.dropzonejs.com/
+            // =================================================================
+            Dropzone.options.demoDropzone = { // The camelized version of the ID of the form element
+                // The configuration we've talked about above
+                autoProcessQueue: false,
+                //uploadMultiple: true,
+                //parallelUploads: 25,
+                //maxFiles: 25,
+
+                // The setting up of the dropzone
+                init: function() {
+                var myDropzone = this;
+                //  Here's the change from enyo's tutorial...
+                //  $("#submit-all").click(function (e) {
+                //  e.preventDefault();
+                //  e.stopPropagation();
+                //  myDropzone.processQueue();
+                    //
+                //}
+                //    );
+
+                }
+
+            }
+
+        });
+
+        var updateProductPrice = function() {
+            var product_tax         = (100 - $('#product_tax option:selected').val());
+            var product_price_tax   = $('#product_price_tax').val();
+            var product_price       = (product_price_tax / product_tax) * 100;
+                product_price       = product_price.toFixed(2);
+
+            $('#product_price').val(product_price);
+        };
+
+        var updateProductPriceTax = function() {
+            var product_tax         = (100 - $('#product_tax option:selected').val());
+            var product_price       = $('#product_price').val();
+            var product_price_tax   = (product_price / 100) * product_tax;
+                product_price_tax   = product_price_tax.toFixed(2);
+
+            $('#product_price_tax').val(product_price_tax);
+        };
+
+        $(document).ready(function() {
+
+            // FORM VALIDATION FEEDBACK ICONS
+            // =================================================================
+            var faIcon = {
+                valid: '',
+                invalid: '',
+                validating: ''
+            }
+
+
+	        // FORM VALIDATION
+	        // =================================================================
+	        $('.main-form').bootstrapValidator({
+                excluded: [':disabled'],
+                feedbackIcons: faIcon,
+                fields: {
+                    product_title_sk: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Musíte zadať slovenský názov!'
+                            },
+                            stringLength: {
+                                message: 'Slovenský názov musí mať minimálne 3 znaky',
+                                min: 3
+                            }
+                        }
+                    },
+                    product_title_en: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Musíte zadať anglický názov!'
+                            },
+                            stringLength: {
+                                message: 'Anglický názov musí mať minimálne 3 znaky',
+                                min: 3
+                            }
+                        }
+                    },
+                    product_title_de: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Musíte zadať nemecký názov!'
+                            },
+                            stringLength: {
+                                message: 'Nemecký názov musí mať minimálne 3 znaky',
+                                min: 3
+                            }
+                        }
+                    },
+                    product_title_url: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Musíte zadať URL názov!'
+                            },
+                            stringLength: {
+                                message: 'Názov v URL musí mať minimálne 3 znaky',
+                                min: 3
+                            }
+                        }
+                    },
+                    product_producer: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Musíte vybrať výrobcu!'
+                            }
+                        }
+                    },
+                    product_price: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Musíte zadať cenu!'
+                            }
+                        }
+                    },
+                    product_price_tax: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Musíte zadať cenu bez DPH!'
+                            }
+                        }
+                    },
+                    product_tax: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Musíte vybrať DPH!'
+                            }
+                        }
+                    }
+		        }
+            }).on('status.field.bv', function(e, data) {
+                var $form     = $(e.target),
+                validator = data.bv,
+                $tabPane  = data.element.parents('.tab-pane'),
+                tabId     = $tabPane.attr('id');
+
+                if (tabId) {
+                var $icon = $('a[href="#' + tabId + '"][data-toggle="tab"]').parent().find('i');
+
+                // Add custom class to tab containing the field
+                if (data.status == validator.STATUS_INVALID) {
+                    $icon.removeClass(faIcon.valid).addClass(faIcon.invalid);
+                } else if (data.status == validator.STATUS_VALID) {
+                    var isValidTab = validator.isValidContainer($tabPane);
+                    $icon.removeClass(faIcon.valid).addClass(isValidTab ? faIcon.valid : faIcon.invalid);
+                }
+                }
+            });
+
+            $('#product_title_sk').keyup(function() {
+                $('.main-form').bootstrapValidator('revalidateField', 'product_title_url');
+            });
+
+        });
+    </script>
+	
+	<!--
+
+	REQUIRED
+	You must include this in your project.
+
+	RECOMMENDED
+	This category must be included but you may modify which plugins or components which should be included in your project.
+
+	OPTIONAL
+	Optional plugins. You may choose whether to include it in your project or not.
+
+	DEMONSTRATION
+	This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+	SAMPLE
+	Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+	Detailed information and more samples can be found in the document.
+
+	-->
+		
+
+</body>
+</html>
+

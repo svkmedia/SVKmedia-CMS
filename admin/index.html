@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Administrácia | SVKmedia CMS</title>
+
+
+	<!--STYLESHEET-->
+	<!--=================================================-->
+
+	<!--Open Sans Font [ OPTIONAL ] -->
+ 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+
+
+	<!--Bootstrap Stylesheet [ REQUIRED ]-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+	<!--Nifty Stylesheet [ REQUIRED ]-->
+	<link href="css/nifty.css" rel="stylesheet">
+
+	
+	<!--Font Awesome [ OPTIONAL ]-->
+	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+	<!--Animate.css [ OPTIONAL ]-->
+	<link href="plugins/animate-css/animate.min.css" rel="stylesheet">
+
+
+	<!--Morris.js [ OPTIONAL ]-->
+	<link href="plugins/morris-js/morris.min.css" rel="stylesheet">
+
+
+	<!--Switchery [ OPTIONAL ]-->
+	<link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+
+
+	<!--Bootstrap Select [ OPTIONAL ]-->
+	<link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+
+
+
+
+	<!--SCRIPT-->
+	<!--=================================================-->
+
+	<!--Page Load Progress Bar [ OPTIONAL ]-->
+	<link href="plugins/pace/pace.min.css" rel="stylesheet">
+	<script src="plugins/pace/pace.min.js"></script>
+
+
+	
+	<!--
+
+	REQUIRED
+	You must include this in your project.
+
+	RECOMMENDED
+	This category must be included but you may modify which plugins or components which should be included in your project.
+
+	OPTIONAL
+	Optional plugins. You may choose whether to include it in your project or not.
+
+	DEMONSTRATION
+	This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+	SAMPLE
+	Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+	Detailed information and more samples can be found in the document.
+
+	-->
+		
+
+</head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+
+<body>
+	<div id="container" class="effect mainnav-lg">
+		
+		<!--NAVBAR-->
+		<!--===================================================-->
+		<header id="navbar">
+			<div id="navbar-container" class="boxed">
+
+				<!--Brand logo & name-->
+				<!--================================-->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="img/logo-svkmedia.png" alt="SVKmedia logo" class="brand-icon">
+					</a>
+				</div>
+				<!--================================-->
+				<!--End brand logo & name-->
+
+
+				<!--Navbar Dropdown-->
+				<!--================================-->
+				<div class="navbar-content clearfix">
+					<ul class="nav navbar-top-links pull-left">
+
+						<!--Navigation toogle button-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="tgl-menu-btn">
+							<a class="mainnav-toggle" href="#">
+								<i class="fa fa-navicon fa-lg"></i>
+							</a>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End Navigation toogle button-->
+
+
+						<!--Notification dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+								<i class="fa fa-bell fa-lg"></i>
+								<span class="badge badge-header badge-danger">5</span>
+							</a>
+
+							<!--Notification dropdown menu-->
+							<div class="dropdown-menu dropdown-menu-md with-arrow">
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-no">Aktivity od posledného prihlásenia</p>
+								</div>
+								<div class="nano scrollable">
+									<div class="nano-content">
+										<ul class="head-list">
+
+											<!-- Dropdown list-->
+                                            <!--
+											<li>
+												<a href="#">
+													<div class="clearfix">
+														<p class="pull-left">Database Repair</p>
+														<p class="pull-right">70%</p>
+													</div>
+													<div class="progress progress-sm">
+														<div style="width: 70%;" class="progress-bar">
+															<span class="sr-only">70% Complete</span>
+														</div>
+													</div>
+												</a>
+											</li>
+                                            -->
+
+											<!-- Dropdown list-->
+                                            <!--
+											<li>
+												<a href="#">
+													<div class="clearfix">
+														<p class="pull-left">Upgrade Progress</p>
+														<p class="pull-right">10%</p>
+													</div>
+													<div class="progress progress-sm">
+														<div style="width: 10%;" class="progress-bar progress-bar-warning">
+															<span class="sr-only">10% Complete</span>
+														</div>
+													</div>
+												</a>
+											</li>
+											-->
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap icon-circle bg-primary">
+															<i class="fa fa-comment fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Nový komentár čaká na schválenie</div>
+														<small class="text-muted">Pred 15 minútami</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+											<span class="badge badge-success pull-right">90%</span>
+													<div class="media-left">
+														<span class="icon-wrap icon-circle bg-danger">
+															<i class="fa fa-hdd-o fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">HDD je takmer plný</div>
+														<small class="text-muted">Pred 50 minútami</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap bg-info">
+															<i class="fa fa-file-word-o fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Nový príspevok na blogu</div>
+														<small class="text-muted">Pred 8 hodinami</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+											<span class="label label-danger pull-right">New</span>
+													<div class="media-left">
+														<span class="icon-wrap bg-purple">
+															<i class="fa fa-comment fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Nová odpoveď na komentár</div>
+														<small class="text-muted">Pred 9 hodinami</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap bg-success">
+															<i class="fa fa-user fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Registrácia nového užívateľa</div>
+														<small class="text-muted">Pred 2 dňami</small>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!--Dropdown footer-->
+								<div class="pad-all bord-top">
+									<a href="#" class="btn-link text-dark box-block">
+										<i class="fa fa-angle-right fa-lg pull-right"></i>Zobraziť všetky aktivity
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End notifications dropdown-->
+
+
+					</ul>
+					<ul class="nav navbar-top-links pull-right">
+
+						<!--Language selector-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a id="demo-lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown">
+								<span class="lang-selected">
+									<img class="lang-flag" src="img/flags/slovakia.png" alt="Slovak">
+									<span class="lang-id">SK</span>
+									<span class="lang-name">Slovenčina</span>
+								</span>
+							</a>
+
+							<!--Language selector menu-->
+							<ul class="head-list dropdown-menu with-arrow">
+                                <li>
+									<!--Slovak-->
+									<a href="#" class="active">
+										<img class="lang-flag" src="img/flags/slovakia.png" alt="Slovak">
+										<span class="lang-id">SK</span>
+										<span class="lang-name">Slovenčina</span>
+									</a>
+								</li>
+								<li>
+									<!--English-->
+									<a href="#">
+										<img class="lang-flag" src="img/flags/united-kingdom.png" alt="English">
+										<span class="lang-id">EN</span>
+										<span class="lang-name">English</span>
+									</a>
+								</li>
+								<li>
+									<!--Germany-->
+									<a href="#">
+										<img class="lang-flag" src="img/flags/germany.png" alt="Germany">
+										<span class="lang-id">DE</span>
+										<span class="lang-name">Deutsch</span>
+									</a>
+								</li>
+								<li>
+									<!--Italy-->
+									<a href="#">
+										<img class="lang-flag" src="img/flags/italy.png" alt="Italy">
+										<span class="lang-id">IT</span>
+										<span class="lang-name">Italiano</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End language selector-->
+
+
+
+						<!--User dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li id="dropdown-user" class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+								<span class="pull-right">
+									<img class="img-circle img-user media-object" src="img/av1.png" alt="Profile Picture">
+								</span>
+								<div class="username hidden-xs">Tomáš Bartalský</div>
+							</a>
+
+
+							<div class="dropdown-menu dropdown-menu-md dropdown-menu-right with-arrow panel-default">
+
+								<!-- Dropdown heading  -->
+                                <!--
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-btm">750Gb of 1,000Gb Used</p>
+									<div class="progress progress-sm">
+										<div class="progress-bar" style="width: 70%;">
+											<span class="sr-only">70%</span>
+										</div>
+									</div>
+								</div>
+                                -->
+
+								<!-- User dropdown menu -->
+								<ul class="head-list">
+									<li>
+										<a href="#">
+											<i class="fa fa-user fa-fw fa-lg"></i> Môj profil
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="badge badge-danger pull-right">5</span>
+											<i class="fa fa-bell fa-fw fa-lg"></i> Notifikácie
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="label label-success pull-right">New</span>
+											<i class="fa fa-gear fa-fw fa-lg"></i> Nastavenia
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-question-circle fa-fw fa-lg"></i> Pomoc
+										</a>
+									</li>
+								</ul>
+
+								<!-- Dropdown footer -->
+								<div class="pad-all text-right">
+									<a href="login.html" class="btn btn-primary">
+										<i class="fa fa-sign-out fa-fw"></i> Odhlásiť sa
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End user dropdown-->
+
+					</ul>
+				</div>
+				<!--================================-->
+				<!--End Navbar Dropdown-->
+
+			</div>
+		</header>
+		<!--===================================================-->
+		<!--END NAVBAR-->
+
+		<div class="boxed">
+
+			<!--CONTENT CONTAINER-->
+			<!--===================================================-->
+			<div id="content-container">
+				
+				<!--Page Title-->
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<div id="page-title">
+					<h1 class="page-header text-overflow">Administrácia</h1>
+
+					<!--Searchbox-->
+					<div class="searchbox">
+						<div class="input-group custom-search-form">
+							<input type="text" class="form-control" placeholder="Vyhľadávanie...">
+							<span class="input-group-btn">
+								<button class="text-muted" type="button"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<!--End page title-->
+
+
+				<!--Breadcrumb-->
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<ol class="breadcrumb">
+					<li>Administrácia</li>
+					<li class="active">Úvod</li>
+				</ol>
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<!--End breadcrumb-->
+
+
+		
+
+				<!--Page content-->
+				<!--===================================================-->
+				<div id="page-content">
+					
+					<div class="row">
+						<div class="col-lg-7">
+					
+							<!--Network Line Chart-->
+							<!--===================================================-->
+							<div id="demo-panel-network" class="panel">
+								<div class="panel-heading">
+									<div class="panel-control">
+										<button id="demo-panel-network-refresh" title="Refresh" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
+										<div class="btn-group">
+											<button class="dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#">Action</a></li>
+												<li><a href="#">Another action</a></li>
+												<li><a href="#">Something else here</a></li>
+												<li class="divider"></li>
+												<li><a href="#">Separated link</a></li>
+											</ul>
+										</div>
+									</div>
+									<h3 class="panel-title">Návštevnosť</h3>
+								</div>
+					
+								<!--Morris line chart placeholder-->
+								<div id="morris-chart-network" class="morris-full-content"></div>
+					
+								<!--Chart information-->
+								<div class="panel-body bg-primary" style="position:relative;z-index:2">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="row">
+												<div class="col-xs-8">
+					
+													<!--Server load stat-->
+													<div class="pad-ver media">
+														<div class="media-left">
+															<span class="icon-wrap icon-wrap-xs">
+																<i class="fa fa-long-arrow-right fa-2x"></i>
+															</span>
+														</div>
+					
+														<div class="media-body">
+															<p class="h3 text-thin media-heading">58%</p>
+															<small class="text-uppercase">Okamžité odchody</small>
+														</div>
+													</div>
+					
+													<!--Progress bar-->
+													<div class="progress progress-xs progress-dark-base mar-no">
+														<div class="progress-bar progress-bar-light" style="width: 58%"></div>
+													</div>
+					
+												</div>
+												<div class="col-xs-4">
+													<!-- User Online -->
+													<div class="text-center">
+														<span class="text-3x text-thin">43</span>
+														<p>Užívateľov online</p>
+													</div>
+												</div>
+											</div>
+					
+											<!--Additional text-->
+											<div class="mar-ver">
+												<small class="pad-btm"><em>* Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</em></small>
+											</div>
+					
+										</div>
+										<div class="col-lg-6">
+					
+											<!-- List Group -->
+											<ul class="list-group bg-trans mar-no">
+												<li class="list-group-item">
+													<!-- Sparkline chart -->
+													<div id="demo-chart-visitors" class="pull-right"></div> Zobrazenia stránky
+												</li>
+												<li class="list-group-item">
+													<!-- Sparkline chart -->
+													<div id="demo-chart-bounce-rate" class="pull-right"></div> Trvanie návštevy
+												</li>
+												<li class="list-group-item">
+													<span class="badge badge-success">3,05</span>
+													Počet stránok na návštevu
+												</li>
+												<li class="list-group-item">
+													<span class="badge badge-warning">81%</span>
+													Nových návštev
+												</li>
+											</ul>
+					
+										</div>
+									</div>
+								</div>
+					
+					
+							</div>
+							<!--===================================================-->
+							<!--End network line chart-->
+					
+						</div>
+						<div class="col-lg-5">
+							<div class="row">
+								<div class="col-sm-6 col-lg-6">
+
+                                    <!--Sparkline Area Chart-->
+									<div class="panel panel-success panel-colorful text-center">
+										<div class="panel-body">
+
+											<!--Placeholder-->
+											<div id="demo-sparkline-area"></div>
+
+										</div>
+										<div class="bg-light pad-ver">
+											<h4 class="mar-no text-thin">Užívatelia</h4>
+										</div>
+									</div>
+
+                                    <!--Sparkline Line Chart-->
+									<div class="panel panel-info panel-colorful text-center">
+										<div class="panel-body">
+
+											<!--Placeholder-->
+											<div id="demo-sparkline-line"></div>
+
+										</div>
+										<div class="bg-light pad-ver">
+											<h4 class="mar-no text-thin">Tržby</h4>
+										</div>
+									</div>
+
+                                    <!--Sparkline bar chart -->
+                                    <div class="panel panel-purple panel-colorful text-center">
+                                        <div class="panel-body">
+
+                                            <!--Placeholder-->
+                                            <div id="demo-sparkline-bar" class="box-inline"></div>
+
+                                        </div>
+                                        <div class="bg-light pad-ver">
+                                            <h4 class="mar-no text-thin">Predaj</h4>
+                                        </div>
+                                    </div>
+								</div>
+								<div class="col-sm-6 col-lg-6">
+
+                                    <!--Tile with progress bar (Comments)-->
+									<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+									<div class="panel panel-danger panel-colorful">
+										<div class="pad-all media">
+											<div class="media-left">
+												<span class="icon-wrap icon-wrap-xs">
+													<i class="fa fa-envelope fa-3x"></i>
+												</span>
+											</div>
+											<div class="media-body">
+												<p class="h3 text-thin media-heading">328</p>
+												<small class="text-uppercase">emailových adries</small>
+											</div>
+										</div>
+
+										<div class="progress progress-xs progress-dark-base mar-no">
+											<div role="progressbar" aria-valuenow="45.9" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-light" style="width: 45.9%"></div>
+										</div>
+
+										<div class="pad-all text-right">
+											<small><span class="text-semibold"><i class="fa fa-star fa-fw"></i> 126</span> adries tento mesiac</small>
+										</div>
+									</div>
+									<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+									<!--End Tile with progress bar (Comments)-->
+
+                                    <!--Tile with progress bar (New Orders)-->
+									<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+									<div class="panel panel-dark panel-colorful">
+										<div class="pad-all media">
+											<div class="media-left">
+												<span class="icon-wrap icon-wrap-xs">
+													<i class="fa fa-calendar fa-fw fa-3x"></i>
+												</span>
+											</div>
+											<div class="media-body">
+												<p class="h3 text-thin media-heading">96</p>
+												<small class="text-uppercase">udalostí v kalendári</small>
+											</div>
+										</div>
+
+										<div class="progress progress-xs progress-dark-base mar-no">
+											<div role="progressbar" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-light" style="width: 13%"></div>
+										</div>
+
+										<div class="pad-all text-right">
+											<small><span class="text-semibold"><i class="fa fa-star fa-fw"></i> 12</span> udalostí tento mesiac</small>
+										</div>
+									</div>
+									<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+									<!--Tile with progress bar (New Orders)-->
+
+                                    <!--Tile with progress bar (New Orders)-->
+									<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+									<div class="panel panel-warning panel-colorful">
+										<div class="pad-all media">
+											<div class="media-left">
+												<span class="icon-wrap icon-wrap-xs">
+													<i class="fa fa-shopping-cart fa-fw fa-3x"></i>
+												</span>
+											</div>
+											<div class="media-body">
+												<p class="h3 text-thin media-heading">5,345</p>
+												<small class="text-uppercase">objednávok</small>
+											</div>
+										</div>
+
+										<div class="progress progress-xs progress-dark-base mar-no">
+											<div role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-light" style="width: 75%"></div>
+										</div>
+
+										<div class="pad-all text-right">
+											<small><span class="text-semibold"><i class="fa fa-star fa-fw"></i> 954</span> objednávok tento mesiac</small>
+										</div>
+									</div>
+									<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+									<!--Tile with progress bar (New Orders)-->
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					
+					
+					<!--Tiles - Bright Version-->
+					<!--===================================================-->
+					<div class="row">
+						<div class="col-sm-6 col-lg-3">
+					
+							<!--Registered User-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel media pad-all">
+								<div class="media-left">
+									<span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+									<i class="fa fa-user fa-2x"></i>
+									</span>
+								</div>
+					
+								<div class="media-body">
+									<p class="text-2x mar-no text-thin">241</p>
+									<p class="text-muted mar-no">Registrovaný užívatelia</p>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+					
+						</div>
+						<div class="col-sm-6 col-lg-3">
+					
+							<!--New Order-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel media pad-all">
+								<div class="media-left">
+									<span class="icon-wrap icon-wrap-sm icon-circle bg-info">
+									<i class="fa fa-cloud fa-2x"></i>
+									</span>
+								</div>
+					
+								<div class="media-body">
+									<p class="text-2x mar-no text-thin">543</p>
+									<p class="text-muted mar-no">Počet blogov</p>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+					
+						</div>
+						<div class="col-sm-6 col-lg-3">
+					
+							<!--Comments-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel media pad-all">
+								<div class="media-left">
+									<span class="icon-wrap icon-wrap-sm icon-circle bg-warning">
+									<i class="fa fa-comment fa-2x"></i>
+									</span>
+								</div>
+					
+								<div class="media-body">
+									<p class="text-2x mar-no text-thin">34</p>
+									<p class="text-muted mar-no">Komentáre</p>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+					
+						</div>
+						<div class="col-sm-6 col-lg-3">
+					
+							<!--Sales-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel media pad-all">
+								<div class="media-left">
+									<span class="icon-wrap icon-wrap-sm icon-circle bg-danger">
+									<i class="fa fa-dollar fa-2x"></i>
+									</span>
+								</div>
+					
+								<div class="media-body">
+									<p class="text-2x mar-no text-thin">12 654 €</p>
+									<p class="text-muted mar-no">Celkový obrat</p>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+					
+						</div>
+					</div>
+					<!--===================================================-->
+					<!--End Tiles - Bright Version-->
+					
+					
+					
+					<div class="row">
+						<div class="col-lg-7">
+					
+							<!--User table-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel">
+								<div class="panel-heading">
+									<div class="panel-control">
+										<a class="fa fa-question-circle fa-lg fa-fw unselectable add-tooltip" href="#" data-original-title="<h4 class='text-thin'>Information</h4><p style='width:150px'>This is an information bubble to help the user.</p>" data-html="true" title=""></a>
+									</div>
+									<h3 class="panel-title">Posledné objednávky</h3>
+								</div>
+					
+								<div class="panel-body">
+									<div class="table-responsive">
+										<table class="table table-striped table-hover">
+											<thead>
+												<tr>
+													<th style="width:4ex">ID</th>
+													<th>Meno</th>
+													<th>Cena</th>
+													<th class="text-center">Status</th>
+													<th class="text-right">Akcie</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="#" class="btn-link">NY531</a></td>
+													<td>Herman Maier</td>
+													<td>24.98 €</td>
+													<td class="text-center"><span class="label label-table label-success">Expedovaná</span></td>
+													<td class="text-right">
+														<div class="btn-group">
+                                                            <button class="btn btn-xs btn-default add-tooltip" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Expedovaná</a></li>
+                                                                <li><a href="#">Zaplatená</a></li>
+                                                                <li><a href="#">Čaká na úhradu</a></li>
+                                                                <li><a href="#">Nedokončená</a></li>
+                                                            </ul>
+                                                        </div>
+														<a class="btn btn-xs btn-danger add-tooltip"  data-toggle="tooltip" href="#" data-original-title="Vymazať" data-container="body"><i class="fa fa-times"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="#" class="btn-link">NY532</a></td>
+													<td>Jožko Mrkvička</td>
+													<td>543.65 €</td>
+													<td class="text-center"><span class="label label-table label-info">Zaplatená</span></td>
+													<td class="text-right">
+														<div class="btn-group">
+                                                            <button class="btn btn-xs btn-default add-tooltip" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Expedovaná</a></li>
+                                                                <li><a href="#">Zaplatená</a></li>
+                                                                <li><a href="#">Čaká na úhradu</a></li>
+                                                                <li><a href="#">Nedokončená</a></li>
+                                                            </ul>
+                                                        </div>
+														<a class="btn btn-xs btn-danger add-tooltip"  data-toggle="tooltip" href="#" data-original-title="Vymazať" data-container="body"><i class="fa fa-times"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="#" class="btn-link">NY533</a></td>
+													<td>Tomáš Bartalský</td>
+													<td>753.95 €</td>
+													<td class="text-center"><span class="label label-table label-warning">Čaká na úhradu</span></td>
+													<td class="text-right">
+														<div class="btn-group">
+                                                            <button class="btn btn-xs btn-default add-tooltip" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Expedovaná</a></li>
+                                                                <li><a href="#">Zaplatená</a></li>
+                                                                <li><a href="#">Čaká na úhradu</a></li>
+                                                                <li><a href="#">Nedokončená</a></li>
+                                                            </ul>
+                                                        </div>
+														<a class="btn btn-xs btn-danger add-tooltip"  data-toggle="tooltip" href="#" data-original-title="Vymazať" data-container="body"><i class="fa fa-times"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="#" class="btn-link">NY534</a></td>
+													<td>Lucy Doe</td>
+													<td>234.86 €</td>
+													<td class="text-center"><span class="label label-table label-danger">Nedokončená</span></td>
+													<td class="text-right">
+														<div class="btn-group">
+                                                            <button class="btn btn-xs btn-default add-tooltip" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Expedovaná</a></li>
+                                                                <li><a href="#">Zaplatená</a></li>
+                                                                <li><a href="#">Čaká na úhradu</a></li>
+                                                                <li><a href="#">Nedokončená</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <a class="btn btn-xs btn-danger add-tooltip"  data-toggle="tooltip" href="#" data-original-title="Vymazať" data-container="body"><i class="fa fa-times"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="#" class="btn-link">NY531</a></td>
+													<td>Herman Maier</td>
+													<td>24.98 €</td>
+													<td class="text-center"><span class="label label-table label-success">Expedovaná</span></td>
+													<td class="text-right">
+														<div class="btn-group">
+                                                            <button class="btn btn-xs btn-default add-tooltip" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Expedovaná</a></li>
+                                                                <li><a href="#">Zaplatená</a></li>
+                                                                <li><a href="#">Čaká na úhradu</a></li>
+                                                                <li><a href="#">Nedokončená</a></li>
+                                                            </ul>
+                                                        </div>
+														<a class="btn btn-xs btn-danger add-tooltip"  data-toggle="tooltip" href="#" data-original-title="Vymazať" data-container="body"><i class="fa fa-times"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="#" class="btn-link">NY532</a></td>
+													<td>Jožko Mrkvička</td>
+													<td>543.65 €</td>
+													<td class="text-center"><span class="label label-table label-info">Zaplatená</span></td>
+													<td class="text-right">
+														<div class="btn-group">
+                                                            <button class="btn btn-xs btn-default add-tooltip" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Expedovaná</a></li>
+                                                                <li><a href="#">Zaplatená</a></li>
+                                                                <li><a href="#">Čaká na úhradu</a></li>
+                                                                <li><a href="#">Nedokončená</a></li>
+                                                            </ul>
+                                                        </div>
+														<a class="btn btn-xs btn-danger add-tooltip"  data-toggle="tooltip" href="#" data-original-title="Vymazať" data-container="body"><i class="fa fa-times"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="#" class="btn-link">NY533</a></td>
+													<td>Tomáš Bartalský</td>
+													<td>753.95 €</td>
+													<td class="text-center"><span class="label label-table label-warning">Čaká na úhradu</span></td>
+													<td class="text-right">
+														<div class="btn-group">
+                                                            <button class="btn btn-xs btn-default add-tooltip" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Expedovaná</a></li>
+                                                                <li><a href="#">Zaplatená</a></li>
+                                                                <li><a href="#">Čaká na úhradu</a></li>
+                                                                <li><a href="#">Nedokončená</a></li>
+                                                            </ul>
+                                                        </div>
+														<a class="btn btn-xs btn-danger add-tooltip"  data-toggle="tooltip" href="#" data-original-title="Vymazať" data-container="body"><i class="fa fa-times"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="#" class="btn-link">NY534</a></td>
+													<td>Lucy Doe</td>
+													<td>234.86 €</td>
+													<td class="text-center"><span class="label label-table label-danger">Nedokončená</span></td>
+													<td class="text-right">
+														<div class="btn-group">
+                                                            <button class="btn btn-xs btn-default add-tooltip" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Expedovaná</a></li>
+                                                                <li><a href="#">Zaplatená</a></li>
+                                                                <li><a href="#">Čaká na úhradu</a></li>
+                                                                <li><a href="#">Nedokončená</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <a class="btn btn-xs btn-danger add-tooltip"  data-toggle="tooltip" href="#" data-original-title="Vymazať" data-container="body"><i class="fa fa-times"></i></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<!--End user table-->
+					
+						</div>
+						<div class="col-lg-5">
+					
+							<!--Morris donut chart-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Objednávky</h3>
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-sm-6 text-center">
+					
+											<!--Chart placeholder -->
+											<div id="demo-morris-donut" class="morris-donut"></div>
+					
+										</div>
+										<div class="col-sm-6">
+											<div class="pad-ver">
+												<p class="text-lg">Zaplatené</p>
+												<div class="progress progress-sm">
+													<div role="progressbar" style="width: 30%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="30" class="progress-bar progress-bar-success">
+														<span class="sr-only">30%</span>
+													</div>
+												</div>
+												<small class="text-muted">30% zo všetkých objednávok</small>
+											</div>
+                                            <div class="pad-ver">
+												<p class="text-lg">Čaká na úhradu</p>
+												<div class="progress progress-sm">
+													<div role="progressbar" style="width: 45%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="45" class="progress-bar progress-bar-warning">
+														<span class="sr-only">45%</span>
+													</div>
+												</div>
+												<small class="text-muted">45% zo všetkých objednávok</small>
+											</div>
+                                            <div class="pad-ver">
+												<p class="text-lg">Nedokončené</p>
+												<div class="progress progress-sm">
+													<div role="progressbar" style="width: 25%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar progress-bar-danger">
+														<span class="sr-only">25%</span>
+													</div>
+												</div>
+												<small class="text-muted">25% zo všetkých objednávok</small>
+											</div>
+					
+											<hr>
+											<p class="text-muted">Lorem ipsum dolor sit amet, consectetuer <a data-title="45%" class="add-tooltip text-semibold" href="#" data-original-title="" title="">adipiscing elit</a>, sed diam nonummy nibh. Lorem ipsum dolor sit amet.</p>
+											<small class="text-muted"><em>Aktualizované : 30 júl, 2015</em></small>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<!--End Morris donut chart-->
+					
+						</div>
+					</div>
+					
+					
+					
+				</div>
+				<!--===================================================-->
+				<!--End page content-->
+
+
+			</div>
+			<!--===================================================-->
+			<!--END CONTENT CONTAINER-->
+
+
+			
+			<!--MAIN NAVIGATION-->
+			<!--===================================================-->
+			<nav id="mainnav-container">
+				<div id="mainnav">
+
+					<!--Shortcut buttons-->
+					<!--================================-->
+                    <!--
+					<div id="mainnav-shortcut">
+						<ul class="list-unstyled">
+							<li class="col-xs-4" data-content="Additional Sidebar">
+								<a id="demo-toggle-aside" class="shortcut-grid" href="#">
+									<i class="fa fa-magic"></i>
+								</a>
+							</li>
+							<li class="col-xs-4" data-content="Notification">
+								<a id="demo-alert" class="shortcut-grid" href="#">
+									<i class="fa fa-bullhorn"></i>
+								</a>
+							</li>
+							<li class="col-xs-4" data-content="Page Alerts">
+								<a id="demo-page-alert" class="shortcut-grid" href="#">
+									<i class="fa fa-bell"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					-->
+					<!--================================-->
+					<!--End shortcut buttons-->
+
+
+					<!--Menu-->
+					<!--================================-->
+					<div id="mainnav-menu-wrap">
+						<div class="nano">
+							<div class="nano-content">
+								<ul id="mainnav-menu" class="list-group">
+						
+									<!--Category name-->
+									<li class="list-header">Navigácia</li>
+						
+									<!--Menu list item-->
+									<li class="active-link">
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">
+												<strong>Administrácia</strong>
+												<span class="label label-success pull-right">Top</span>
+											</span>
+										</a>
+									</li>
+						
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-file"></i>
+											<span class="menu-title">
+												<strong>Obsah</strong>
+											</span>
+											<i class="arrow"></i>
+										</a>
+						
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./content/index.html">Sekcie</a></li>
+											<li><a href="./content/navigation.html">Navigácia</a></li>
+											<li><a href="./content/categories.html">Kategórie</a></li>
+											<li><a href="./content/filemanager.html">Súbory</a></li>
+										</ul>
+									</li>
+						
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-suitcase"></i>
+											<span class="menu-title">
+												<strong>Katalóg</strong>
+											</span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./product/index.html">Produkty</a></li>
+											<li><a href="./product/brands.html">Výrobcovia</a></li>
+											<li><a href="./product/categories.html">Kategórie</a></li>
+											<li><a href="./product/sale.html">Zľavy</a></li>
+											<li><a href="./product/import.html">Import</a></li>
+											<li><a href="./product/export.html">Export</a></li>
+										</ul>
+									</li>
+						
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-shopping-cart"></i>
+											<span class="menu-title">
+												<strong>Objednávky</strong>
+												<span class="pull-right badge badge-warning badge-arrow">9</span>
+											</span>
+                                            <i class="arrow"></i>
+										</a>
+						
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./order/index.html">Prehľad</a></li>
+											<li><a href="./order/delivery.html">Doprava</a></li>
+											<li><a href="./order/payment.html">Platba</a></li>
+											<li><a href="./order/cart.html">Nákupný košík</a></li>
+										</ul>
+									</li>
+						
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-cloud"></i>
+											<span class="menu-title">
+                                                <strong>Blog</strong>
+                                            </span>
+											<i class="arrow"></i>
+										</a>
+						
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./blog/index.html">Príspevky</a></li>
+											<li><a href="./blog/categories.html">Kategórie</a></li>
+										</ul>
+									</li>
+						
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-image"></i>
+											<span class="menu-title">
+                                                <strong>Galéria</strong>
+                                            </span>
+											<i class="arrow"></i>
+										</a>
+						
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./gallery/index.html">Galérie</a></li>
+											<li><a href="./gallery/categories.html">Kategórie</a></li>
+										</ul>
+									</li>
+						
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-video-camera"></i>
+											<span class="menu-title">
+                                                <strong>Video</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./video/index.html">Videá</a></li>
+											<li><a href="./video/categories.html">Kategórie</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-calendar"></i>
+											<span class="menu-title">
+                                                <strong>Kalendár</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./calendar/index.html">Udalosti</a></li>
+											<li><a href="./calendar/categories.html">Kategórie</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="./comment/index.html">
+											<i class="fa fa-comments"></i>
+											<span class="menu-title">
+												<strong>Komentáre</strong>
+												<span class="pull-right badge badge-warning badge-arrow">3</span>
+											</span>
+										</a>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-bolt"></i>
+											<span class="menu-title">
+                                                <strong>Reklama</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./advertisement/index.html">Kampane</a></li>
+											<li><a href="./advertisement/positions.html">Pozície</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="./user/index.html">
+											<i class="fa fa-user"></i>
+											<span class="menu-title">
+                                                <strong>Užívatelia</strong>
+                                            </span>
+										</a>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-envelope"></i>
+											<span class="menu-title">
+                                                <strong>Newsletter</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./newsletter/index.html">Kampane</a></li>
+											<li><a href="./newsletter/email_list.html">Zoznam emailov</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-wrench"></i>
+											<span class="menu-title">
+                                                <strong>Nastavenia</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./settings/index.html">Hlavné</a></li>
+											<li><a href="./settings/database.html">Databáza</a></li>
+										</ul>
+									</li>
+
+                                    <!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-line-chart"></i>
+											<span class="menu-title">
+                                                <strong>Štatistiky</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+										</a>
+
+                                        <!--Submenu-->
+										<ul class="collapse">
+											<li><a href="./stats/index.html">Návštevnosť</a></li>
+											<li><a href="./stats/shop.html">Obchod</a></li>
+                                            <li><a href="./stats/user.html">Užívatelia</a></li>
+											<li><a href="./stats/newsletter.html">Newsletter</a></li>
+											<li><a href="./stats/search.html">Vyhľadávanie</a></li>
+										</ul>
+									</li>
+
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<!--================================-->
+					<!--End menu-->
+
+				</div>
+			</nav>
+			<!--===================================================-->
+			<!--END MAIN NAVIGATION-->
+
+		</div>
+
+		
+
+		<!-- FOOTER -->
+		<!--===================================================-->
+		<footer id="footer">
+
+			<!-- Visible when footer positions are fixed -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="show-fixed pull-right">
+				<ul class="footer-list list-inline">
+					<li>
+						<p class="text-sm">SEO Proggres</p>
+						<div class="progress progress-sm progress-light-base">
+							<div style="width: 80%" class="progress-bar progress-bar-danger"></div>
+						</div>
+					</li>
+
+					<li>
+						<p class="text-sm">Online Tutorial</p>
+						<div class="progress progress-sm progress-light-base">
+							<div style="width: 80%" class="progress-bar progress-bar-primary"></div>
+						</div>
+					</li>
+					<li>
+						<button class="btn btn-sm btn-dark btn-active-success">Checkout</button>
+					</li>
+				</ul>
+			</div>
+
+
+
+			<!-- Visible when footer positions are static -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<div class="hide-fixed pull-right pad-rgt">Currently v2.2</div>
+
+
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Remove the class name "show-fixed" and "hide-fixed" to make the content always appears. -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<p class="pad-lft">&#0169; 2015 Your Company</p>
+
+
+
+		</footer>
+		<!--===================================================-->
+		<!-- END FOOTER -->
+
+
+		<!-- SCROLL TOP BUTTON -->
+		<!--===================================================-->
+		<button id="scroll-top" class="btn"><i class="fa fa-chevron-up"></i></button>
+		<!--===================================================-->
+
+
+
+	</div>
+	<!--===================================================-->
+	<!-- END OF CONTAINER -->
+
+
+	
+	<!--JAVASCRIPT-->
+	<!--=================================================-->
+
+	<!--jQuery [ REQUIRED ]-->
+	<script src="js/jquery-2.1.1.min.js"></script>
+
+
+	<!--BootstrapJS [ RECOMMENDED ]-->
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!--Fast Click [ OPTIONAL ]-->
+	<script src="plugins/fast-click/fastclick.min.js"></script>
+
+	
+	<!--Nifty Admin [ RECOMMENDED ]-->
+	<script src="js/nifty.js"></script>
+
+
+	<!--Morris.js [ OPTIONAL ]-->
+	<script src="plugins/morris-js/morris.min.js"></script>
+	<script src="plugins/morris-js/raphael-js/raphael.min.js"></script>
+
+
+	<!--Sparkline [ OPTIONAL ]-->
+	<script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+
+
+	<!--Skycons [ OPTIONAL ]-->
+	<script src="plugins/skycons/skycons.min.js"></script>
+
+
+	<!--Switchery [ OPTIONAL ]-->
+	<script src="plugins/switchery/switchery.min.js"></script>
+
+
+	<!--Bootstrap Select [ OPTIONAL ]-->
+	<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+
+
+
+
+	<!--Specify page [ SAMPLE ]-->
+	<script src="js/demo/dashboard.js"></script>
+
+	
+	<!--
+
+	REQUIRED
+	You must include this in your project.
+
+	RECOMMENDED
+	This category must be included but you may modify which plugins or components which should be included in your project.
+
+	OPTIONAL
+	Optional plugins. You may choose whether to include it in your project or not.
+
+	DEMONSTRATION
+	This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+	SAMPLE
+	Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+	Detailed information and more samples can be found in the document.
+
+	-->
+		
+
+</body>
+</html>
